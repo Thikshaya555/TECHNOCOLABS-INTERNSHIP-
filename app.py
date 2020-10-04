@@ -7,7 +7,7 @@ from PIL import Image
 
 
 pickle_in=open("lr_model.pkl","rb")
-lr_model=pickle.load(pickle_in)
+lr_model=pickle.load(open("lr_model.pkl","rb"))
 
 
 def predict_note_authentication(PAY_1,LIMIT_BAL):
